@@ -48,7 +48,10 @@ obj.update();
 1. ```myGameArea.start()``` – Starts the engine
 1. ```myGameArea.clear()``` - Clears canvas per frame
 1. ```myGameArea.stop()``` - clears Interval
-1. ```component(width, height, "color", x, y, ) 
+1. ```component(width, height, "color", x, y, type)``` - create a new game object
+1. * type = "textureMaterial" - add texture on an object (write image src instead of color parameter) 
+   * type = "circle" - create circle shaped game object
+   * type
 
 
 
