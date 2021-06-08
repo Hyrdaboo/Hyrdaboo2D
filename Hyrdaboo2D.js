@@ -3,6 +3,8 @@
  * Copyright 2021 Hyrdaboo2d.js authors
  * SPDX-License-Identifier: MIT 
  */
+console.log("Hyrdaboo2D: engine active!");
+console.log("Hyrdaboo2D:Make sure to create startGame() and updateGameArea() method. \nNOTE: To start engine you need to call myGameArea.start() function.");
 window.onload = function() {
 		startGame();
 }
@@ -23,9 +25,16 @@ var myGameArea = {
         		myGameArea.x = false;
         		myGameArea.y = false;
         });
+        window.addEventListener('mousemove', function(ev) {
+            myGameArea.x = ev.pageX;
+            myGameArea.y = ev.pageY;
+        });
     },
     clear : function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    },
+    stop : function() {
+    		  clearInterval(this.interval);
     }
 }
 
@@ -59,6 +68,7 @@ function component(width, height, color, x, y, type) {
     this.gravity = 0;
     this.gravitySpeed = 0;
     this.touchTrace = false;
+    this.followMouse = false;
     this.bounce = 0;
     this.update = function() {
         ctx = myGameArea.context;
@@ -273,6 +283,11 @@ ctx.drawImage(this.image,this.x,this.y,this.width,this.height);
     		if (myGameArea.x && myGameArea.y && this.touchTrace == true) 
     		{    		  
         this.x = myGameArea.x-this.width/2;
+        this.y = myGameArea.y-this.width/2;
+        this.gravitySpeed = 0;
+      }
+      if(myGameArea.x && myGameArea.y && this.followMouse == true) {
+      		this.x = myGameArea.x-this.width/2;
         this.y = myGameArea.y-this.width/2;
         this.gravitySpeed = 0;
       }
