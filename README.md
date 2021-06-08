@@ -43,7 +43,9 @@ obj.update();
 
 ```
 
-## References
+# References
+
+#### Essentials
 
 1. ```myGameArea.start()``` – Starts the engine
 1. ```myGameArea.clear()``` - Clears canvas per frame
@@ -51,9 +53,14 @@ obj.update();
 1. ```component(width, height, "color", x, y, type)``` - create a new game object
 1. * type = "textureMaterial" - add texture on an object (write image src instead of color parameter) 
    * type = "circle" - create circle shaped game object
-   * type
 
+#### user interaction
 
+1. ```obj.touchTrace = bool``` - touchtrace enabled/disabled (for touch devices ) 
+1. ```obj.followMouse = bool``` - move with cursor enabled/disabled
+1. ```setVibration(int)``` - vibrate
+1. ```viewFullscreen(orientation)``` - enter full-screen mode
+1.
 
 
 
