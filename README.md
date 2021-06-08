@@ -62,7 +62,7 @@ obj.update();
 1. ```obj.followMouse = bool``` - move with cursor enabled/disabled
 1. ```setVibration(int)``` - vibrate
 1. ```viewFullscreen(orientation)``` - enter full-screen mode
-1. ```obj.clicked = bool```
+1. ```obj.clicked()``` - detect if object is clicked
 
 #### camera
 
@@ -90,7 +90,7 @@ obj.update();
 1. ```obj.crashWith(otherobj)``` - box collision2
 1. ```obj.circleColliding(otherobj)``` - circle collision 
 1. ```obj.boxCircleColliding(otherobj)``` - circle with box collision
-1. ```obj.hitCanvasEdge = bool``` - hit canvas(viewport) borders
+1. ```obj.hitCanvasEdge()``` - hit canvas(viewport) borders
 
 
 
