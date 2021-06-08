@@ -53,6 +53,8 @@ obj.update();
 1. ```component(width, height, "color", x, y, type)``` - create a new game object
 1. * type = "textureMaterial" - add texture on an object (write image src instead of color parameter) 
    * type = "circle" - create circle shaped game object
+1. ```obj.color = color value``` - change color of an object 
+1. ```obj.strokeColor = color value``` - change border color of a circle
 
 #### user interaction
 
@@ -76,7 +78,8 @@ obj.update();
 1. ```obj.gravity = int``` - set gravity
 1. ```obj.gravitySpeed = int``` - set gravity acceleration index
 1. ```obj.Mu = int``` - set roughness of a surface
-1. ```obj.friction = int```
+1. ```obj.bounce = int``` - set bounciness of an object 
+1. ```obj.mass = int``` - set Mass
 
 
 
