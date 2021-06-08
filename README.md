@@ -34,6 +34,19 @@ obj.update();
 <head>
 <title>Hyrdaboo2D demo</title>
 </head>
+<style>
+html {
+user-select: none;
+}
+canvas {
+background: #303030;
+position: fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+}
+</style>
   <body>
  <!-- use this link to access the library internally -->
    <script src="https://raw.githack.com/Hyrdaboo/Hyrdaboo2D/main/Hyrdaboo2D.min.js"></script>
