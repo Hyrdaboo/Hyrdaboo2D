@@ -62,6 +62,7 @@ obj.update();
 1. ```obj.followMouse = bool``` - move with cursor enabled/disabled
 1. ```setVibration(int)``` - vibrate
 1. ```viewFullscreen(orientation)``` - enter full-screen mode
+1. ```obj.clicked = bool```
 
 #### camera
 
@@ -80,7 +81,16 @@ obj.update();
 1. ```obj.Mu = int``` - set roughness of a surface
 1. ```obj.bounce = int``` - set bounciness of an object 
 1. ```obj.mass = int``` - set Mass
+1. ```obj.angle = int``` - angle
+1. ```obj.rotatable = bool``` - set rotatable
 
+#### collisions 
+
+1. ```obj.boxColliding(otherobj)``` - box collision 
+1. ```obj.crashWith(otherobj)``` - box collision2
+1. ```obj.circleColliding(otherobj)``` - circle collision 
+1. ```obj.boxCircleColliding(otherobj)``` - circle with box collision
+1. ```obj.hitCanvasEdge = bool``` - hit canvas(viewport) borders
 
 
 
