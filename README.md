@@ -60,7 +60,24 @@ obj.update();
 1. ```obj.followMouse = bool``` - move with cursor enabled/disabled
 1. ```setVibration(int)``` - vibrate
 1. ```viewFullscreen(orientation)``` - enter full-screen mode
-1.
+
+#### camera
+
+1. ```camera.x = int``` - camera x
+1. ```camera.y = int``` - camera y
+1. ```scale = int``` - zoom in/out (in development) 
+
+#### physics 
+
+1. ```obj.speedX = int``` - set x velocity 
+1. ```obj.speedY = int``` - set y velocity  
+1. ```obj.acceleration = int``` - set acceleration
+1. ```obj.addForce = int``` - add force to an object
+1. ```obj.gravity = int``` - set gravity
+1. ```obj.gravitySpeed = int``` - set gravity acceleration index
+1. ```obj.Mu = int``` - set roughness of a surface
+1. ```obj.friction = int```
+
 
 
 
