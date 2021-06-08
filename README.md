@@ -44,3 +44,13 @@ obj.update();
 ```
 
 ## References
+
+1. ```myGameArea.start()``` – Starts the engine
+1. ```myGameArea.clear()``` - Clears canvas per frame
+1. ```myGameArea.stop()``` - clears Interval
+1. ```component(width, height, "color", x, y, ) 
+
+
+
+
+
